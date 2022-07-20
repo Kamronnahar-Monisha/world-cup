@@ -106,7 +106,7 @@ a[href="#all-group"]{
 }
 .blog-list{ 
     flex-grow:1;
-    flex-shrink: 1;  
+    flex-shrink: 1;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:1.5rem;
@@ -139,6 +139,7 @@ a[href="#all-group"]{
 .icons div{
     margin-right: 30px;
     align-self: center;
+    font-size:1rem;
 }
 .icons div{
     display:flex;
@@ -242,6 +243,13 @@ upcoming-match page's styles
         flex-direction:column;
         gap:3rem;
     }
+    .blog-list{
+        grid-template-columns: repeat(1,1fr);
+        gap:3rem;
+    }
+    .icons div{
+        font-size:2rem;
+    }
     .pages-list{
         width:initial;
         height:initial;
@@ -279,6 +287,12 @@ upcoming-match page's styles
         border:1px solid rgb(189, 186, 186);
         font-size: 2.5rem;
         padding:5px 10px;
+    }
+    .blog-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .icons div{
+        font-size:1.5rem;
     }
     .view-all-button{
         display:block;
