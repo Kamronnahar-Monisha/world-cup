@@ -58,7 +58,6 @@ main{
   padding:1rem 2rem;
   border-radius: 10px;
   font-size:1.4rem; 
-  /* margin-bottom:20px; */
 }
 .showcase-details button i{
     margin-left: 0.5rem;
@@ -79,20 +78,20 @@ main{
 /* blogs section */
 #blogs{
     display:flex;
-    margin:70px 0;
+    margin:4rem 0;
 }
 .pages-list{
     width: 312px;
+    height: 312px;
     flex-grow: 0;
     flex-shrink: 0;
-    height: 312px;
     background-color:#75c9b7;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right:20px;
+    margin-right:1.5rem;
 }
 .pages-list button{
     border:none;
@@ -110,7 +109,7 @@ a[href="#all-group"]{
     flex-shrink: 1;  
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:1.5rem;
 }
 .blog,.match{
     border: 1px solid #E8E8E8;
@@ -239,10 +238,48 @@ upcoming-match page's styles
         margin-top:4rem ;
         padding-right: 0;
     }
+    #blogs{
+        flex-direction:column;
+        gap:3rem;
+    }
+    .pages-list{
+        width:initial;
+        height:initial;
+        background-color:transparent;
+        margin-right: 0;
+    }
+    .pages-list button{
+        width:100%;
+        border:1px solid rgb(189, 186, 186);
+        font-size: 3.5rem;
+        padding:1rem 4rem;
+    }
 }
 
 /* Media query for medium devices like tablet */
 @media screen and (min-width:689px) and (max-width:992px){
+    #blogs{
+        flex-direction:column;
+        gap:2rem;
+    }
+    .pages-list{
+        width:initial;
+        height:initial;
+        background-color:transparent;
+        flex-direction: row;
+        gap:2rem;
+        justify-content: start;
+        margin-right: 0;
+    }
+    .pages-list a{
+       flex:1 1 2rem;
+    }
+    .pages-list button{
+        width:100%;
+        border:1px solid rgb(189, 186, 186);
+        font-size: 2.5rem;
+        padding:5px 10px;
+    }
     .view-all-button{
         display:block;
         text-align: center;
