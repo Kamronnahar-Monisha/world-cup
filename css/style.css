@@ -102,7 +102,7 @@ a[href="#all-group"]{
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
-.blog{
+.blog,.match{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 }
@@ -140,9 +140,17 @@ a[href="#all-group"]{
     margin-right: 5px;
 }
 
-
-
-
+/* Veiw all button section */
+.view-all-button{
+    text-align: center;
+    display:none;
+}
+.view-all-button button{
+    padding:15px 30px;
+    border-radius:10px;
+    font-size: 18px;
+}
+/* footer section */
 footer{
     background-color: #75c9b7;
     padding:50px 80px;
@@ -165,3 +173,40 @@ footer hr{
     color:white;
     padding:0 100px;
 } 
+
+
+
+/*---------------------------- 
+upcoming-match page's styles
+-----------------------------*/
+
+
+
+/* blog section style */
+.match{
+    text-align: center;
+    padding:40px 30px;
+}
+.team-pair{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.team-pair p{
+    font-weight: 700;
+}
+.teams-name{
+    font-weight: 600;
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 5px;
+}
+.match-date{
+    color: #4D4D4D;
+    margin:0 0;
+}
+
+
+
+/* Media query for midium devices like tablet */
+
+
