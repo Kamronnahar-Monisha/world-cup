@@ -6,6 +6,17 @@ body{
     font-family: 'Poppins', sans-serif;
     margin:0;
 }
+.custom-button-with-border{
+    color:#eec830;
+    border:3px solid #eec830;
+    background-color: white;
+}
+.custom-button{
+    border:none;
+    background-color: #eec830;
+    color:white;
+}
+
 
 
 /* main section */
@@ -38,11 +49,8 @@ main{
     padding-right:20px;
 }
 .showcase-details button{
-    border:none;
     padding:3% 6%;
     border-radius: 10px;
-    background-color:#eec830;
-    color:white;
     font-size: 18px;
 }
 .showcase-details button i{
@@ -65,6 +73,8 @@ main{
 }
 .pages-list{
     width: 312px;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 312px;
     background-color:#75c9b7;
     border-radius: 10px;
@@ -81,20 +91,77 @@ main{
     padding:20px;
     border-radius:10px;
     font-size: 20px;
-    color:#eec830;
-    border:3px solid #eec830;
 }
 a[href="#all-group"]{
     margin:30px 0;
 }
-a[href="#blog"] button{
-    background-color:#eec830;
-    color:white;
-    border:none;
-}
-.blog-list{
-    width:10%;
+.blog-list{ 
+    flex-grow:1;
+    flex-shrink: 1;  
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
+.blog{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog>img{
+    width: 100%;
+}
+.blog-details{
+    padding:20px;
+}
+.blog button{
+    font-weight: 500;
+    font-size: 16px;
+    padding:5px 20px;
+    border-radius:5px;
+}
+.blog h2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+}
+.icons{
+    display:flex;
+}
+.icons div{
+    margin-right: 30px;
+    align-self: center;
+}
+.icons div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons div img{
+    margin-right: 5px;
+}
+
+
+
+
+footer{
+    background-color: #75c9b7;
+    padding:50px 80px;
+    text-align: center;
+}
+footer>p{
+    font-weight: 600;
+    font-size: 40px;
+    color:white;
+} 
+footer hr{
+    border: 1px solid #eec830;
+    margin:40px 0;
+}
+.footer-details{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    padding:0 100px;
+} 
