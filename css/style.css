@@ -2,9 +2,14 @@
 
 
 /* shared utilities */
+
+
+
+html{
+    font-size: 1vw;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    margin:0;
 }
 .custom-button-with-border{
     color:#eec830;
@@ -26,44 +31,49 @@ main{
 
 /* showcase-section */
 #showcase{
-    background-color:#75c9b7;
-    border-radius: 30px;
+    min-height: 10rem;
     display:flex;
-    justify-content:center;
     align-items: center;
-    
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    background-color:#75c9b7;
+    border-radius: 30px; 
 }
-.showcase-box{
-    width:42%;
+.showcase-details{
+    flex:1 1 20rem;
+    padding-left:5rem;
 }
 .showcase-details h1{
     font-weight: 700;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;;
-    margin:0;
+    font-size: 4rem;
+    line-height: 4.5rem;;
     color:white;
 } 
 .showcase-details p{
     color:white;
-    padding-right:20px;
+    padding-right:2rem;
 }
 .showcase-details button{
-    padding:3% 6%;
-    border-radius: 10px;
-    font-size: 18px;
+  padding:1rem 2rem;
+  border-radius: 10px;
+  font-size:1.4rem; 
+  /* margin-bottom:20px; */
 }
 .showcase-details button i{
-    margin-left: 10px;
-    padding-top:5px;
+    margin-left: 0.5rem;
+    padding-top:1rem;
+}
+.showcase-image{
+    flex:1 1 20rem;
+    padding-right:5rem;
 }
 .showcase-image img{
-    width: 100%;
-    margin-top:8%;
-    margin-left:8%;
-    position:relative;
-    top:7px;
-}
+     width: 100%;
+     height: 100%;
+     position: relative;
+     top:.4rem;
+} 
 
 
 /* blogs section */
@@ -142,14 +152,9 @@ a[href="#all-group"]{
 
 /* Veiw all button section */
 .view-all-button{
-    text-align: center;
     display:none;
 }
-.view-all-button button{
-    padding:15px 30px;
-    border-radius:10px;
-    font-size: 18px;
-}
+
 /* footer section */
 footer{
     background-color: #75c9b7;
@@ -207,6 +212,45 @@ upcoming-match page's styles
 
 
 
-/* Media query for midium devices like tablet */
+/* Media query for small devices */
+@media screen and (max-width:688px){
+    .showcase-details h1{
+        font-size: 5rem;
+        line-height: 5.5rem;;
+        margin-top:5rem ;
+    } 
+    .showcase-details p{
+        font-size:2rem;
+    }
+    .showcase-details button{
+      padding:2rem 3rem;
+      border-radius: 10px;
+      font-size:2.4rem;
+    }
+    .showcase-details button i{
+        margin-left: 1.5rem;
+        padding-top:1rem;
+    }
+    #showcase{
+        flex-direction: column;
+        text-align: center;
+    }
+    .showcase-image{
+        margin-top:4rem ;
+        padding-right: 0;
+    }
+}
 
+/* Media query for medium devices like tablet */
+@media screen and (min-width:689px) and (max-width:992px){
+    .view-all-button{
+        display:block;
+        text-align: center;
+    }
+    .view-all-button button{
+        padding:15px 30px;
+        border-radius:10px;
+        font-size: 18px;
+    }
+}
 
