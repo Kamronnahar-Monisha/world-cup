@@ -3,8 +3,6 @@
 
 /* shared utilities */
 
-
-
 html{
     font-size: 1vw;
 }
@@ -150,7 +148,7 @@ a[href="#all-group"]{
     margin-right: 5px;
 }
 
-/* Veiw all button section */
+/* View all button section */
 .view-all-button{
     display:none;
 }
@@ -171,12 +169,13 @@ footer hr{
     margin:40px 0;
 }
 .footer-details{
+    text-align: center;
     display:grid;
     grid-template-columns: repeat(6,1fr);
     font-weight: 500;
     font-size: 16px;
     color:white;
-    padding:0 100px;
+    gap:.5rem;
 } 
 
 
@@ -262,6 +261,9 @@ upcoming-match page's styles
         font-size: 3.5rem;
         padding:1rem 4rem;
     }
+    .footer-details{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /* Media query for medium devices like tablet */
@@ -303,5 +305,29 @@ upcoming-match page's styles
         border-radius:10px;
         font-size: 18px;
     }
-}
+    .footer-details{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:
+        "one  two three four"
+        ". five six ." 
+    }
+    .footer-details p:nth-child(1){
+        grid-area: one;
+    }
+    .footer-details p:nth-child(2){
+        grid-area: two;
+    }
+    .footer-details p:nth-child(3){
+        grid-area: three;
+    }
+    .footer-details p:nth-child(4){
+        grid-area: four;
+    }
+    .footer-details p:nth-child(5){
+        grid-area: five;
+    }
+    .footer-details p:nth-child(6){
+        grid-area: six;
+    }
 
+} 
