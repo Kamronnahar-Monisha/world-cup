@@ -207,6 +207,8 @@ upcoming-match page's styles
 .team-pair{
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    font-size: 16px;
 }
 .team-pair p{
     font-weight: 700;
@@ -225,7 +227,7 @@ upcoming-match page's styles
 
 
 /* Media query for small devices */
-@media screen and (max-width:688px){
+@media screen and (max-width:767px){
     /* showcase-section */
     #showcase{
         flex-direction: column;
@@ -281,7 +283,7 @@ upcoming-match page's styles
 }
 
 /* Media query for medium devices like tablet */
-@media screen and (min-width:689px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:1023px){
     /* blogs section */
     #blogs{
         flex-direction:column;
