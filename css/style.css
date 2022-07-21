@@ -108,8 +108,7 @@ a[href="#all-group"]{
     margin:30px 0;
 }
 .blog-list{ 
-    flex-grow:1;
-    flex-shrink: 1;
+    width:75%;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:1.5rem;
@@ -201,6 +200,7 @@ upcoming-match page's styles
 
 /* blog section style */
 .match{
+    flex-basis: 1rem;
     text-align: center;
     padding:40px 30px;
 }
@@ -223,7 +223,6 @@ upcoming-match page's styles
     color: #4D4D4D;
     margin:0 0;
 }
-
 
 
 /* Media query for small devices */
@@ -261,6 +260,7 @@ upcoming-match page's styles
         gap:3rem;
     }
     .blog-list{
+        width:100%;
         grid-template-columns: repeat(1,1fr);
         gap:3rem;
     }
@@ -308,6 +308,7 @@ upcoming-match page's styles
         padding:5px 10px;
     }
     .blog-list{
+        width:100%;
         grid-template-columns: repeat(2,1fr);
     }
     /* View all button section */
