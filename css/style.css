@@ -202,7 +202,8 @@ upcoming-match page's styles
 .match{
     flex-basis: 1rem;
     text-align: center;
-    padding:40px 30px;
+    /* padding:40px 30px; */
+    padding:2rem;
 }
 .team-pair{
     display:grid;
@@ -210,16 +211,20 @@ upcoming-match page's styles
     justify-content: center;
     font-size: 16px;
 }
+.team-pair img{
+    width: 100%;
+}
 .team-pair p{
     font-weight: 700;
 }
 .teams-name{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #161616;
-    margin-bottom: 5px;
+    margin:5px 0;
 }
 .match-date{
+    font-size: 1rem;
     color: #4D4D4D;
     margin:0 0;
 }
@@ -279,6 +284,13 @@ upcoming-match page's styles
     /* blogs section */
     .footer-details{
         grid-template-columns: repeat(1,1fr);
+    }
+     /* match section */
+     .teams-name{
+        font-size: 2.2rem;
+    }
+    .match-date{
+        font-size:2rem;
     }
 }
 
@@ -345,6 +357,13 @@ upcoming-match page's styles
     }
     .footer-details p:nth-child(6){
         grid-area: six;
+    }
+    /* match section */
+    .teams-name{
+        font-size: 1.7rem;
+    }
+    .match-date{
+        font-size:1.2rem;
     }
 
 } 
