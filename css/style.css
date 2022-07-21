@@ -121,7 +121,7 @@ a[href="#all-group"]{
     width: 100%;
 }
 .blog-details{
-    padding:20px;
+    padding:2rem;
 }
 .blog button{
     font-weight: 500;
@@ -131,8 +131,8 @@ a[href="#all-group"]{
 }
 .blog h2{
     font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 25px;
     color: #161616;
 }
 .icons{
